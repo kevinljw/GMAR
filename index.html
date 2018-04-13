@@ -13,7 +13,39 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-        <a-marker type='barcode' value='5'>
+        <a-marker type='barcode' value='39'>
+            <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
+                <a-sphere radius="0.1" color="#00ff80"></a-sphere>
+
+                <a-entity>
+                    <a-animation attribute="rotation" to="200 400 40" dur="5000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                    <a-sphere radius="1.5" color="#7BC8A4"></a-sphere>
+                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                    <a-entity position="0 10 0">
+                        <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                        <a-sphere radius="1" color="#4594f1"></a-sphere>
+                        <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+                        
+                        
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 10 100" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="3" color="#d9ae4c"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                                <a-sphere radius="1" color="#ff5d95"></a-sphere>
+                                
+                                
+                            </a-entity>
+                        </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+
+        </a-marker>
+        <a-marker type='barcode' value='10'>
             <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
                 <a-sphere radius="0.1" color="#7BC8A4"></a-sphere>
 
@@ -68,7 +100,6 @@
                     </a-entity>
                 </a-entity>
             </a-entity>
-
 
         </a-marker>
         <a-entity camera> </a-entity>
