@@ -1,8 +1,9 @@
 <html>
 <head>
     <title>GMAR</title>
-    <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+    <script src="dist/aframe-v0.8.0.min.js"></script>
+    <script src="dist/aframe-ar.js"></script>
+<!--    <script src="dist/aframe-mouse-cursor-component.js"></script>-->
     <!-- Remove if you want some more debug options -->
     <style>
         #arjsDebugUIContainer {
@@ -13,8 +14,8 @@
 
 <body style='margin : 0px; overflow: hidden;'>
     <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-        <a-marker type='barcode' value='39'>
-            <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
+        <a-marker type='barcode' value='54'>
+            <a-entity id="target" position="0 0 0" rotation="30 180 0" scale="0.5 0.5 0.5">
                 <a-sphere radius="0.1" color="#00ff80"></a-sphere>
 
                 <a-entity>
@@ -45,7 +46,7 @@
             </a-entity>
 
         </a-marker>
-        <a-marker type='barcode' value='10'>
+        <a-marker type='barcode' value='55'>
             <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
                 <a-sphere radius="0.1" color="#7BC8A4"></a-sphere>
 
@@ -102,6 +103,235 @@
             </a-entity>
 
         </a-marker>
+        
+        <a-marker type='barcode' value='56'>
+            <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
+                <a-sphere radius="0.1" color="#b9c87b"></a-sphere>
+
+                <a-entity>
+                    <a-animation attribute="rotation" to="200 400 40" dur="5000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                    <a-sphere radius="1.5" color="#7BC8A4"></a-sphere>
+                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                    <a-entity position="0 10 0">
+                        <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                        <a-sphere radius="1" color="#627faf"></a-sphere>
+                        <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+                        
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="2" color="#00c4ff"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                <a-sphere radius="1.5" color="#ffec07"></a-sphere>
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 10 100" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="3" color="#4CC3D9"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+<!--                                <a-sphere radius="1" color="#FFC65D"></a-sphere>-->
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                    <a-sphere radius="1.5" color="#93648D"></a-sphere>
+                                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                    <a-entity position="0 10 0">
+                                        <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                    </a-entity>
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+
+        </a-marker>
+        <a-marker type='barcode' value='57'>
+            <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
+                <a-sphere radius="0.1" color="#b9c87b"></a-sphere>
+
+                <a-entity>
+                    <a-animation attribute="rotation" to="200 400 40" dur="5000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                    <a-sphere radius="1.5" color="#7BC8A4"></a-sphere>
+                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                    <a-entity position="0 10 0">
+                        <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                        <a-sphere radius="1" color="#53d035"></a-sphere>
+                        <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+                        
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="2" color="#00c4ff"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                <a-sphere radius="1.5" color="#ffec07"></a-sphere>
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 10 100" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="3" color="#a08847"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+<!--                                <a-sphere radius="1" color="#FFC65D"></a-sphere>-->
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                    <a-sphere radius="1.5" color="#93648D"></a-sphere>
+                                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                    <a-entity position="0 10 0">
+                                        <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                    </a-entity>
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+
+        </a-marker>
+        <a-marker type='barcode' value='58'>
+            <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
+                <a-sphere radius="0.1" color="#b9c87b"></a-sphere>
+
+                <a-entity>
+                    <a-animation attribute="rotation" to="200 400 40" dur="5000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                    <a-sphere radius="1.5" color="#7BC8A4"></a-sphere>
+                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                    <a-entity position="0 10 0">
+                        <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                        <a-sphere radius="1" color="#53d035"></a-sphere>
+                        <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+                        
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="2" color="#00c4ff"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                <a-sphere radius="1.5" color="#ffec07"></a-sphere>
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 10 100" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="3" color="#a08847"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+<!--                                <a-sphere radius="1" color="#FFC65D"></a-sphere>-->
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                    <a-sphere radius="1.5" color="#93648D"></a-sphere>
+                                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                    <a-entity position="0 10 0">
+                                        <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                    </a-entity>
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+
+        </a-marker>
+        <a-marker type='barcode' value='59'>
+            <a-entity position="0 0 0" rotation="30 180 0" scale="0.1 0.1 0.1">
+                <a-sphere radius="0.1" color="#b9c87b"></a-sphere>
+
+                <a-entity>
+                    <a-animation attribute="rotation" to="200 400 40" dur="5000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                    <a-sphere radius="1.5" color="#7BC8A4"></a-sphere>
+                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                    <a-entity position="0 10 0">
+                        <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                        <a-sphere radius="1" color="#53d035"></a-sphere>
+                        <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+                        
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="2" color="#00c4ff"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                <a-sphere radius="1.5" color="#ffec07"></a-sphere>
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                        <a-entity position="0 10 0">
+                            <a-animation attribute="rotation" to="50 10 100" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                            <a-sphere radius="3" color="#a08847"></a-sphere>
+                            <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                            <a-entity position="0 10 0">
+                                <a-animation attribute="rotation" to="50 40 50" dur="2000" delay="250" repeat="indefinite" direction="alternate"></a-animation>
+<!--                                <a-sphere radius="1" color="#FFC65D"></a-sphere>-->
+                                <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                <a-entity position="0 10 0">
+                                    <a-animation attribute="rotation" to="90 90 0" dur="2000" delay="0" repeat="indefinite" direction="alternate"></a-animation>
+                                    <a-sphere radius="1.5" color="#93648D"></a-sphere>
+                                    <a-cylinder position="0 5 0" height="10" radius="0.075" color="#404040"></a-cylinder>
+
+                                    <a-entity position="0 10 0">
+                                        <a-sphere radius="1.5" color="#FFF"></a-sphere>
+
+                                    </a-entity>
+                                </a-entity>
+                            </a-entity>
+                        </a-entity>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+
+        </a-marker>
         <a-entity camera> </a-entity>
     </a-scene>
     <!--
@@ -113,5 +343,7 @@
     
   </a-scene>
 -->
+    <script src="dist/jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
